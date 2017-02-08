@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/profile_bg_for_select"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+            <com.zzl.zl_app.widget.CircularImage
+                android:id="@+id/personaldynamic_list_item_head"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/head_default" />
+
+            <TextView
+                android:id="@+id/personaldynamic_list_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/personaldynamic_list_item_head"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/personaldynamic_list_item_head"
+                android:text="杜拉拉"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/personaldynamic_list_item_name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/personaldynamic_list_item_head" >
+
+                <ImageView
+                    android:id="@+id/personaldynamic_list_item_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/all_icon_boy" />
+
+                <TextView
+                    android:id="@+id/personaldynamic_list_item_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="24"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/personaldynamic_list_item_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/personaldynamic_list_item_time"
+                android:background="@color/transparent"
+                android:src="@drawable/personal_dynamic_delete" />
+
+            <TextView
+                android:id="@+id/personaldynamic_list_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/personaldynamic_list_item_delete"
+                android:text="1-15"
+                android:textColor="#828282"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/personaldynamic_list_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="独钓寒江雪"
+            android:textColor="#3d3d3d"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/personaldynamic_list_item_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+</RelativeLayout>

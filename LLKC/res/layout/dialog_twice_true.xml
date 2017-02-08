@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/dialog_twice_relat"
+        android:layout_width="200dip"
+        android:layout_height="150dip"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:background="@drawable/bg_head" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="30dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/dialog_twice_content"
+                style="@style/text_mid_white_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dialog_twice_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/dialog_twice_cancel"
+                android:layout_width="100dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_btn_gray2_selector"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#ff383838"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/dialog_twice_ok"
+                android:layout_width="100dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_btn_gray2_selector"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#ff383838"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_c" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="3dp" >
+
+                    <ImageView
+                        android:id="@+id/game_detail_icon"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="3dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/game_default" />
+
+                    <Button
+                        android:id="@+id/game_detail_load_btn"
+                        style="@style/text_mid_white_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="3dp"
+                        android:background="@drawable/bg_btn_commitdata"
+                        android:padding="5dp"
+                        android:text="@string/free_load" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/game_detail_load_btn"
+                        android:layout_toRightOf="@id/game_detail_icon"
+                        android:orientation="vertical"
+                        android:paddingLeft="3dp" >
+
+                        <TextView
+                            android:id="@+id/game_detail_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:gravity="center_vertical"
+                            android:text="大领主物语"
+                            android:textColor="#565656"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/game_detail_info"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="1.5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1.0"
+                            android:gravity="center_vertical"
+                            android:text="排名第一"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="177dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/bg_btn_left"
+                        android:gravity="center"
+                        android:text="@string/info_detail" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/bg_btn_right"
+                        android:gravity="center"
+                        android:text="@string/friend_rank" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.zzl.zl_app.widget.FixedViewFlipper
+                android:id="@+id/game_detail_viewflipper"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <HorizontalScrollView
+                        android:id="@+id/game_detail_horizontalscrollv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="175dp"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:id="@+id/game_detail_gallery_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <GridView
+                                android:id="@+id/game_detail_gallery"
+                                android:layout_width="1dp"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/gamedetail_grid_background"
+                                android:columnWidth="220dip"
+                                android:gravity="center|fill_vertical"
+                                android:horizontalSpacing="5dp"
+                                android:numColumns="4"
+                                android:stretchMode="spacingWidthUniform" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <TextView
+                        style="@style/text_mid_black_gray_15"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="5dp"
+                        android:text="@string/synopsis" />
+
+                    <TextView
+                        android:id="@+id/game_detail_intro_tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text=""
+                        android:textColor="#737373" />
+                </LinearLayout>
+            </com.zzl.zl_app.widget.FixedViewFlipper>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tap_top" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/type_fgroup_stitle"
+                android:layout_marginTop="5dp"
+                android:text="@string/address_book"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/fgroup_layout_myfriend"
+                style="@style/type_fgroup_layout_item"
+                android:layout_marginTop="2dp" >
+
+                <ImageView
+                    android:id="@+id/fgroup_imgv_myfriend"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="12dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/fgroup_btn_f" />
+
+                <TextView
+                    android:id="@+id/fgroup_tv_myfriend"
+                    style="@style/text_mid_black_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/fgroup_imgv_myfriend"
+                    android:text="@string/myfriend" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="12dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+            
+            
+
+            <RelativeLayout
+                android:id="@+id/fgroup_layout_fg"
+                style="@style/type_fgroup_layout_item"
+                android:layout_marginTop="2dp" >
+
+                <ImageView
+                    android:id="@+id/fgroup_imgv_myfg"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="12dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/fgroup_btn_fg" />
+
+                <TextView
+                    android:id="@+id/fgroup_tv_myfg"
+                    style="@style/text_mid_black_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/fgroup_imgv_myfg"
+                    android:text="@string/my_fgroup" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="12dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/type_fgroup_stitle"
+                android:layout_marginTop="5dp"
+                android:text="@string/entertainment_center"
+                android:visibility="visible"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/fgroup_layout_entertainment"
+                style="@style/type_fgroup_layout_item"
+                android:layout_marginTop="2dp"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/fgroup_imgv_entertainment"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="12dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/fgroup_btn_game" />
+
+                <TextView
+                    android:id="@+id/fgroup_tv_entertainment"
+                    style="@style/text_mid_black_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/fgroup_imgv_entertainment"
+                    android:text="@string/entertainment_center2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="12dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fgroup_layout_readcenter"
+                style="@style/type_fgroup_layout_item"
+                android:layout_marginTop="2dp"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/fgroup_imgv_readcenter"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="12dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/fgroup_btn_read" />
+
+                <TextView
+                    android:id="@+id/fgroup_tv_readcenter"
+                    style="@style/text_mid_black_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/fgroup_imgv_readcenter"
+                    android:text="@string/read_center" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="12dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fgroup_layout_appcenter"
+                style="@style/type_fgroup_layout_item"
+                android:layout_marginTop="2dp"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/fgroup_imgv_appcenter"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="12dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/fgroup_btn_apps" />
+
+                <TextView
+                    android:id="@+id/fgroup_tv_appcenter"
+                    style="@style/text_mid_black_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/fgroup_imgv_appcenter"
+                    android:text="@string/app_center" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="12dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

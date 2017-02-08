@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <com.zzl.zl_app.widget.CircularImage
+            android:id="@+id/nearfriend_item_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="2dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/head_default" />
+
+        <TextView
+            android:id="@+id/nearfriend_item_gname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/nearfriend_item_head"
+            android:text="哈哈"
+            android:textColor="@color/black"
+            android:textSize="15sp" />                
+
+        <ImageView
+            android:id="@+id/nearfriend_item_gsex"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/nearfriend_item_gname"
+            android:layout_alignLeft="@+id/nearfriend_item_gname"
+            android:scaleType="centerInside"
+            android:src="@drawable/all_icon_boy" />
+
+        <TextView
+            android:id="@+id/nearfriend_item_gage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nearfriend_item_gname"
+            android:layout_toRightOf="@+id/nearfriend_item_gsex"
+            android:layout_marginLeft="15dp"
+            android:textSize="12sp"
+            android:textColor="#828282"  />
+
+        <TextView
+            android:id="@+id/nearfriend_item_gdistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nearfriend_item_gname"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/nearfriend_item_gage"
+            android:text="距离:19KM"
+            android:textSize="12sp"
+            android:textColor="#828282"  />
+        
+        <ImageButton
+            android:id="@+id/nearfriend_item_gadd"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:focusable="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/add_friend" />
+    </RelativeLayout>
+
+</LinearLayout>

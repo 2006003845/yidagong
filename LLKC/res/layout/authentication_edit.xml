@@ -1,0 +1,198 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_c" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="12dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:background="@drawable/bg_input"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/corporate_name"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/auth_edit_et_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:hint="@string/text_num_limited_30"
+                    android:textColor="#787878"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/auth_edit_et_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:hint="@string/corporate_phone_hint"
+                    android:inputType="number"
+                    android:textColor="#787878"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/corporate_address"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/auth_edit_et_addr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:hint="@string/corporate_address_hint"
+                    android:inputType="text"
+                    android:textColor="#787878"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/corporate_intro"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/auth_edit_et_intro"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:hint="@string/corporate_intro_hint"
+                    android:minLines="1"
+                    android:paddingTop="3dp"
+                    android:singleLine="false"
+                    android:textColor="#787878"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/auth_edit_tv_left"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="150/150" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/auth_edit_layout_license"
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/corporate_license"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/auth_edit_imgv_license"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@string/upload"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_phone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:text="@string/upload"
+                    android:textColor="#383838"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/auth_edit_btn_commit"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_btn_commitdata"
+                android:text="@string/commit_auth_data"
+                android:textColor="#ffffffff"
+                android:textSize="18sp" />
+
+           	<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_recom_bg"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical|left"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/authentication_info"
+                    android:textColor="#898989"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

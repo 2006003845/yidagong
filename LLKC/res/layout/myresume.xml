@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_myresume" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/myresume_rel_head"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_margin="10dp"
+                android:background="#33a6ff"
+                android:gravity="center"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/myresume_imgv_photo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@string/upload"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_phone" />
+
+                <TextView
+                    style="@style/text_mid_white_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/myresume_imgv_photo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="添加照片"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="17.93"
+                android:background="@drawable/white_rounded"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/myresume_rel_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" >
+
+                    <TextView
+                        android:id="@+id/myresume_tv_name_prompt"
+                        style="@style/text_myresume_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/realname" />
+
+                    <ImageView
+                        android:id="@+id/arrow_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/arrow_prompt"
+                        android:src="@drawable/arrow" />
+
+                    <EditText
+                        android:id="@+id/myresume_tv_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7dp"
+                        android:layout_toLeftOf="@id/arrow_name"
+                        android:layout_toRightOf="@id/myresume_tv_name_prompt"
+                        android:background="@null"
+                        android:ems="10"
+                        android:hint="@string/text_num_limited_10"
+                        android:textSize="16sp" >
+                    </EditText>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xuline"
+                    android:contentDescription="@string/line_prompt" />
+
+                <RelativeLayout
+                    android:id="@+id/myresume_rel_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" >
+
+                    <TextView
+                        android:id="@+id/myresume_tv_sex_prompt"
+                        style="@style/text_myresume_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/Gender" />
+
+                    <ImageView
+                        android:id="@+id/arrow_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/arrow_prompt"
+                        android:src="@drawable/arrow" />
+
+                    <TextView
+                        android:id="@+id/myresume_tv_sex"
+                        style="@style/text_myresume_black"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7dp"
+                        android:layout_toLeftOf="@id/arrow_sex"
+                        android:layout_toRightOf="@id/myresume_tv_sex_prompt"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xuline"
+                    android:contentDescription="@string/line_prompt" />
+
+                <RelativeLayout
+                    android:id="@+id/myresume_rel_birth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" >
+
+                    <TextView
+                        android:id="@+id/myresume_tv_birth_prompt"
+                        style="@style/text_myresume_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/birthidy" />
+
+                    <ImageView
+                        android:id="@+id/arrow_birth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/arrow_prompt"
+                        android:src="@drawable/arrow" />
+
+                    <TextView
+                        android:id="@+id/myresume_tv_birth"
+                        style="@style/text_myresume_black"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7dp"
+                        android:layout_toLeftOf="@id/arrow_birth"
+                        android:layout_toRightOf="@id/myresume_tv_birth_prompt"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xuline"
+                    android:contentDescription="@string/line_prompt" />
+
+                <RelativeLayout
+                    android:id="@+id/myresume_rel_education"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" >
+
+                    <TextView
+                        android:id="@+id/myresume_tv_education_prompt"
+                        style="@style/text_myresume_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/education" />
+
+                    <ImageView
+                        android:id="@+id/arrow_education"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/arrow_prompt"
+                        android:src="@drawable/arrow" />
+
+                    <TextView
+                        android:id="@+id/myresume_tv_education"
+                        style="@style/text_myresume_black"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="7dp"
+                        android:layout_toLeftOf="@id/arrow_education"
+                        android:layout_toRightOf="@id/myresume_tv_education_prompt"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xuline"
+                    android:contentDescription="@string/line_prompt" />
+
+                <RelativeLayout
+                    android:id="@+id/myresume_rel_workexperience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" >
+
+                    <TextView
+                        android:id="@+id/myresume_tv_workexperience_prompt"
+                        style="@style/text_myresume_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/workexperience" />
+
+                    <ImageView
+                        android:id="@+id/arrow_workexperience"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/arrow_prompt"
+                        android:src="@drawable/arrow" />
+
+                    <TextView
+                        android:id="@+id/myresume_tv_workexperience"
+                        style="@style/text_myresume_black"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="7dp"
+                        android:layout_toLeftOf="@id/arrow_workexperience"
+                        android:layout_toRightOf="@id/myresume_tv_workexperience_prompt"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xuline"
+                    android:contentDescription="@string/line_prompt" />
+
+                <RelativeLayout
+                    android:id="@+id/myresume_rel_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" >
+
+                    <TextView
+                        android:id="@+id/myresume_tv_tel_prompt"
+                        style="@style/text_myresume_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/telnumber" />
+
+                    <ImageView
+                        android:id="@+id/arrow_telnumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/arrow_prompt"
+                        android:src="@drawable/arrow" />
+
+                    <EditText
+                        android:id="@+id/myresume_tv_telnum"
+                        style="@style/text_myresume_black"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="7dp"
+                        android:layout_toLeftOf="@id/arrow_telnumber"
+                        android:layout_toRightOf="@id/myresume_tv_tel_prompt"
+                        android:background="@null"
+                        android:hint="@string/hinit_input"
+                        android:inputType="number"
+                        android:phoneNumber="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" >
+                    </EditText>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xuline"
+                    android:contentDescription="@string/line_prompt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="17.93"
+                android:background="@drawable/white_rounded"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/myresume_rel_expectpost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" >
+
+                    <TextView
+                        android:id="@+id/myresume_tv_expectpost_prompt"
+                        style="@style/text_myresume_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/expectpost" />
+
+                    <ImageView
+                        android:id="@+id/arrow_expectpost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/arrow_prompt"
+                        android:src="@drawable/arrow" />
+
+                    <TextView
+                        android:id="@+id/myresume_tv_expectpost"
+                        style="@style/text_myresume_black"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="7dp"
+                        android:layout_toLeftOf="@id/arrow_expectpost"
+                        android:layout_toRightOf="@id/myresume_tv_expectpost_prompt"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xuline"
+                    android:contentDescription="@string/line_prompt" />
+
+                <RelativeLayout
+                    android:id="@+id/myresume_rel_expectsalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" >
+
+                    <TextView
+                        android:id="@+id/myresume_tv_expectsalary_prompt"
+                        style="@style/text_myresume_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/positionsalary" />
+
+                    <ImageView
+                        android:id="@+id/arrow_expectsalary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/arrow_prompt"
+                        android:src="@drawable/arrow" />
+
+                    <TextView
+                        android:id="@+id/myresume_tv_expectsalary"
+                        style="@style/text_myresume_black"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="7dp"
+                        android:layout_toLeftOf="@id/arrow_expectsalary"
+                        android:layout_toRightOf="@id/myresume_tv_expectsalary_prompt"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="17.93"
+                android:background="@drawable/white_rounded"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/myresume_tv_selfassessment_prompt"
+                    style="@style/text_myresume_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/selfassessment" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xuline"
+                    android:contentDescription="@string/line_prompt" />
+
+                <RelativeLayout
+                    android:id="@+id/myresume_rel_selfassessment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" >
+
+                    <ImageView
+                        android:id="@+id/arraw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/arrow_prompt"
+                        android:src="@drawable/arrow" />
+
+                    <EditText
+                        android:id="@+id/myresume_tv_selfassessment"
+                        style="@style/text_myresume_black"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="25dp"
+                        android:layout_toLeftOf="@id/arraw"
+                        android:background="@null"
+                        android:hint="@string/fullselfinfor"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" >
+                    </EditText>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

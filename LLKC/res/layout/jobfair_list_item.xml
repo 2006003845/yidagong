@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/profile_bg_for_select" >
+
+        <TextView
+            android:id="@+id/jobfair_jobname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="41dp"
+            android:text="招聘会"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/jobfair_tel_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/jobfair_jobname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            android:text="@string/jobfair_tel_hint"
+            android:textColor="@color/text_gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/jobfair_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_alignBottom="@+id/jobfair_tel_hint"
+            android:layout_toRightOf="@+id/jobfair_tel_hint"
+            android:textColor="@color/text_gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/jobfair_fixed_line_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jobfair_jobname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/jobfair_fixed_line_hint"
+            android:textColor="@color/text_gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/jobfair_fixed_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/jobfair_fixed_line_hint"
+            android:layout_toRightOf="@+id/jobfair_fixed_line_hint"
+            android:textColor="@color/text_gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/jobfair_venues_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jobfair_fixed_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible"
+            android:text="@string/jobfair_venues_hint"
+     
+            android:textColor="@color/text_gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/jobfair_venues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/jobfair_venues_hint"
+            android:layout_toRightOf="@+id/jobfair_venues_hint"
+            android:ellipsize="end"
+            android:visibility="invisible"
+            android:singleLine="true"
+            android:textColor="@color/text_gray"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/jobfair_adress_image"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/jobfair_fixed_line_hint"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:visibility="invisible"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_poi" />
+
+        <TextView
+            android:id="@+id/jobfair_adress_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jobfair_fixed_line_hint"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+           
+            android:text="@string/jobfair_adress_hint"
+            android:textColor="@color/text_gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/jobfair_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/jobfair_adress_hint"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/jobfair_adress_hint"
+            android:textColor="@color/text_gray"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/jobfair_jobtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="3dp"
+        android:singleLine="true"
+        android:background="@drawable/bg_time"
+        android:text="2014-14-14"
+        android:textSize="13sp"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

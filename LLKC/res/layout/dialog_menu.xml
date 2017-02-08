@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#7e7e7e"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="昵称	"
+            android:textColor="#0fa2ff"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#6d6d6d"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/dialog_copy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:padding="7dp"
+            android:text="@string/copy"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/dialog_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#8e8e8e"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/dialog_transmit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/transmit"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/dialog_divider2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#8e8e8e"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/dialog_colllect"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/collect"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/dialog_divider3"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#8e8e8e"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/dialog_delete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

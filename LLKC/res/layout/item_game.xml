@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="3dp" >
+
+        <ImageView
+            android:id="@+id/item_game_icon"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/game_default" />
+
+        <LinearLayout
+            android:id="@+id/item_game_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <Button
+                android:id="@+id/item_game_start"
+                style="@style/text_mid_white_15"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bg_btn_commitdata"
+                android:focusable="false"
+                android:text="@string/start" />
+
+            <ImageView
+                android:id="@+id/item_game_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="3dp"
+                android:contentDescription="@null"
+                android:src="@drawable/arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dp"
+            android:layout_toLeftOf="@id/item_game_layout"
+            android:layout_toRightOf="@id/item_game_icon"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/item_game_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:text="大领主物语"
+                android:textColor="#565656"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/item_game_info"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1.5dp"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:text="排名第一"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

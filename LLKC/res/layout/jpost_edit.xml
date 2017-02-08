@@ -1,0 +1,393 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".CorporateActivity" >
+
+    <include layout="@layout/title_c" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="12dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:background="@drawable/bg_input"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jpost_name"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/jpost_et_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:hint="@string/text_num_limited_10"
+                    android:textColor="#787878"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jpost_num"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/jpost_et_num"
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:textColor="#787878"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/ren"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/jpost_layout_salary"
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input" >
+
+                <TextView
+                    android:id="@+id/jpost_edit_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/jpost_salary"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    android:id="@+id/jpost_tv_salary"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/arrow"
+                    android:layout_toRightOf="@id/jpost_edit_t"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/please_select"
+                    android:textColor="#787878"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input" >
+
+                <TextView
+                    android:id="@+id/jpost_classify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/jpost_type"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@string/select_classes"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    android:id="@+id/jpost_tv_classify"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/arrow"
+                    android:layout_toRightOf="@id/jpost_classify"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/select_classes"
+                    android:textColor="#787878"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jpost_describ"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/jpost_et_describ"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:hint="@string/text_num_limited2_10"
+                    android:minLines="1"
+                    android:paddingTop="3dp"
+                    android:singleLine="false"
+                    android:textColor="#787878"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jpost_demand"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/jpost_et_demand"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:hint="@string/text_num_limited2_20"
+                    android:minLines="1"
+                    android:paddingTop="3dp"
+                    android:singleLine="false"
+                    android:textColor="#787878"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jpost_layout_days"
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deadline"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/jpost_tv_days"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/please_select"
+                    android:textColor="#787878"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/jpost_layout_tag"
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input" >
+
+                <TextView
+                    android:id="@+id/jpost_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tag"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@string/tag"
+                    android:src="@drawable/arrow"
+                    android:textColor="#787878" />
+
+                <TextView
+                    android:id="@+id/jpost_tv_tag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/arrow"
+                    android:layout_toRightOf="@id/jpost_tag"
+                    android:gravity="center_vertical"
+                    android:text="@string/please_select"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input" >
+
+                <TextView
+                    android:id="@+id/jpost_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/area"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@string/tag"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    android:id="@+id/jpost_tv_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/arrow"
+                    android:layout_toRightOf="@id/jpost_area"
+                    android:text="@string/please_select"
+                    android:textColor="#787878"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jpost_addr"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/jpost_et_addr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:textColor="#787878"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/linkman"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/jpost_et_linkman"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:textColor="#787878"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_input"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/jpost_et_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:inputType="phone"
+                    android:textColor="#787878"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/jpost_btn_commit"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_btn_commitdata"
+                android:text="@string/publish_job"
+                android:textColor="#ffffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

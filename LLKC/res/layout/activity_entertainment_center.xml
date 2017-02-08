@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_c" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/type_fgroup_stitle"
+                android:layout_marginTop="7dp"
+                android:text="@string/loaded"
+                android:textColor="#585858"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/entertainment_game_loaded_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/theme"
+                android:gravity="left|center_vertical"
+                android:padding="13dp"
+                android:text="@string/game_unload" />
+
+            <ListView
+                android:id="@+id/entertainment_game_loaded_listv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/theme"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/divier"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:padding="5dp" />
+
+            <TextView
+                style="@style/type_fgroup_stitle"
+                android:layout_marginTop="7dp"
+                android:text="@string/unload"
+                android:textColor="#585858"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/entertainment_game_unload_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/theme"
+                android:gravity="left|center_vertical"
+                android:padding="13dp"
+                android:text="@string/nogametoload" />
+
+            <ListView
+                android:id="@+id/entertainment_game_unload_listv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/theme"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/divier"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:padding="5dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

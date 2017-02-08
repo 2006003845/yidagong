@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/home_title" />
+
+    <ScrollView
+        android:id="@+id/home_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/home_relayout_jobfair"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_rounded_white_for_top_selector"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp" >
+
+                    <ImageView
+                        android:id="@+id/home_relayout_jobfair_img"
+                        android:layout_width="30dp"
+                        android:layout_height="36dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/home_job_fair" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/home_relayout_jobfair_img"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:text="@string/job_fair"
+                        android:textColor="#909090"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/home_relayout_fortrain"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_rounded_white_for_top_selector"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp" >
+
+                    <ImageView
+                        android:id="@+id/home_relayout_fortrain_img"
+                        android:layout_width="30dp"
+                        android:layout_height="36dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/home_fortrain" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/home_relayout_fortrain_img"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:text="@string/main_center"
+                        android:textColor="#909090"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/home_relayout_newsomething"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_rounded_white_for_top_selector"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp" >
+
+                    <ImageView
+                        android:id="@+id/home_relayout_newsomething_img"
+                        android:layout_width="30dp"
+                        android:layout_height="36dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/home_newsomething" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/home_relayout_newsomething_img"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:text="@string/news_of_work"
+                        android:textColor="#909090"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/home_relayout_postjob"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_rounded_white_for_top_selector"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp" >
+
+                    <ImageView
+                        android:id="@+id/home_relayout_postjob_img"
+                        android:layout_width="30dp"
+                        android:layout_height="36dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/home_postjob" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/home_relayout_postjob_img"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/publish_job"
+                        android:textColor="#909090"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </android.support.v4.view.ViewPager>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dip"
+                    android:background="@drawable/home_viewpage_cover"
+                    android:contentDescription="@null"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/bg_rounded_black"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:text=""
+                        android:textColor="#909090"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <com.zzl.zl_app.widget.PointLinearLayout
+                        android:id="@+id/pointlayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/home_image"
+                    android:layout_width="24dp"
+                    android:layout_height="36dp"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/home_hotsearch_img" />
+
+                <TextView
+                    android:id="@+id/home_tv_hot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/home_image"
+                    android:text="@string/hotsearch"
+                    android:textColor="#515567"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/home_hotsearch_work_bg" >
+
+                <LinearLayout
+                    android:id="@+id/home_hotsearch_lilayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1" >
+
+                        <Button
+                            android:id="@+id/home_hotsearch_button1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/bg_btn_blue_lt_selector"
+                            android:text="普工"
+                            android:textColor="#515567" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="#dadada" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1" >
+
+                        <Button
+                            android:id="@+id/home_hotsearch_button2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/bg_btn_blue_selector"
+                            android:text="技工"
+                            android:textColor="#515567" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="#dadada" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1" >
+
+                        <Button
+                            android:id="@+id/home_hotsearch_button3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/bg_btn_blue_selector"
+                            android:text="服务员"
+                            android:textColor="#515567" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="#dadada" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/home_hotsearch_button4"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_btn_blue_rt_selector"
+                        android:padding="5dp"
+                        android:text="快递"
+                        android:textColor="#515567" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/home_hotsearch_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/home_hotsearch_lilayout"
+                    android:background="#dadada" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/home_hotsearch_line" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1" >
+
+                        <Button
+                            android:id="@+id/home_hotsearch_button5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/bg_btn_blue_lb_selector"
+                            android:text="厨师"
+                            android:textColor="#515567" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="#dadada" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1" >
+
+                        <Button
+                            android:id="@+id/home_hotsearch_button6"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/bg_btn_blue_selector"
+                            android:text="客服"
+                            android:textColor="#515567" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="#dadada" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1" >
+
+                        <Button
+                            android:id="@+id/home_hotsearch_button7"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/bg_btn_blue_selector"
+                            android:text="会计"
+                            android:textColor="#515567" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="#dadada" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/home_hotsearch_button8"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_btn_blue_rb_selector"
+                        android:padding="5dp"
+                        android:text="出纳"
+                        android:textColor="#515567" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/home_alljob_button"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/home_alljob_bg_selector"
+                android:text="@string/alljob"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp" >
+
+                <LinearLayout
+                    android:id="@+id/home_recom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_rounded_white_for_top_selector"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/home_recom_imgv"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/home_recomm_img"
+                        android:contentDescription="@null"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:id="@+id/home_recom_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/recom"
+                        android:textColor="#515567"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/home_recom_imgnew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/bg_not"
+                        android:gravity="center"
+                        android:text="NEW"
+                        android:textColor="#FFFFFF"
+                        android:textSize="8sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/home_nearjob"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_rounded_white_for_top_selector"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/home_nearjob_imgv"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/home_searchnear_img"
+                        android:contentDescription="@null"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:id="@+id/home_nearjob_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/search_near"
+                        android:textColor="#515567"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/home_nearjob_tv_cur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#515567"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/home_tv_pop"
+        style="@style/text_small_white_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/home_pop_bg"
+        android:text="@string/home_pop1"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/home_tv_refresh"
+        style="@style/text_small_white_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/home_refresh"
+        android:gravity="center"
+        android:text="双击可刷新"
+        android:visibility="gone" />
+
+</RelativeLayout>

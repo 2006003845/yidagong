@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_white_stroke"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/pop_invi_friends_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="邀请好友" />
+      <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/pop_group_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="工友帮详情" />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black"/>
+     <TextView
+        android:id="@+id/pop_modify_groupinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="修改帮资料" />
+  
+</LinearLayout>

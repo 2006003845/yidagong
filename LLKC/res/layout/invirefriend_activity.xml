@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/other_title" />
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="#e4e4e4"
+        >
+
+        <EditText
+            android:id="@+id/editText_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:hint="请输入昵称"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/editText_button"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/blue_rounded"
+            android:padding="5dp"
+               android:layout_margin="10dp"
+            android:src="@drawable/seach_button" />
+    </LinearLayout>
+    -->
+
+    <ListView
+        android:id="@+id/group_friend_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/divier"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:padding="5dp" >
+    </ListView>
+
+    <Button
+        android:id="@+id/inbirefriend_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/blue_rounded"
+        android:padding="10dp"
+        android:text="邀请好友,开始聊天" />
+
+</LinearLayout>

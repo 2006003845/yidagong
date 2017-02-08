@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="gray">#eaeaea</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#d84e4e</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0196ff</color>
+    <color name="text_blue">#4383ca</color>
+    <color name="text_gray">#999999</color>
+    <color name="layout_gray">#eeeeee</color>
+    <color name="transparent_background">#aa000000</color>
+     <color name="transparent">#00000000</color>
+    <color name="listitem_black">#ff000000</color>
+    <color name="appstart_bg">#c3dbff</color>
+    <color name="theme">#fff5f5ff</color>
+    <color name="orange">#FF9900</color>
+    <color name="orange2">#ed7b40</color>
+    <color name="btn_bg_color_blue">#553262ff</color>
+
+</resources>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    android:id="@+id/parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tap_top" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_tap"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/info_tv_msg"
+                        style="@style/text_mid_black_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="@string/msg" />
+
+                    <ImageView
+                        android:id="@+id/not_msg"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignRight="@id/info_tv_msg"
+                        android:layout_alignTop="@id/info_tv_msg"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginTop="-8dp"
+                        android:contentDescription="@string/msg"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/imgv_remind"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/info_tv_request"
+                        style="@style/text_mid_black_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="@string/request" />
+
+                    <ImageView
+                        android:id="@+id/not_request"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignRight="@id/info_tv_request"
+                        android:layout_alignTop="@id/info_tv_request"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginTop="-8dp"
+                        android:contentDescription="@string/msg"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/imgv_remind"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/info_tv_sys"
+                        style="@style/text_mid_black_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="@string/system" />
+
+                    <ImageView
+                        android:id="@+id/not_sys"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignRight="@id/info_tv_sys"
+                        android:layout_alignTop="@id/info_tv_sys"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginTop="-8dp"
+                        android:contentDescription="@string/msg"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/imgv_remind"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/info_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tap" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/info_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/msg_center_listv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@null" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

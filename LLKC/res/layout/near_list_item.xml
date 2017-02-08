@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/job_att"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+         android:layout_marginTop="3dp"
+         android:layout_alignBottom="@+id/jobname"
+         android:visibility="invisible"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/yan" />
+
+    <TextView
+        android:id="@+id/jobname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginLeft="0dp"
+        
+        android:layout_marginRight="30dp"
+        android:text="美的集团武汉招工"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/jobname"
+        android:text="￥2000-3000"
+        
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/jobtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/salary"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/salary"
+        android:text="5分钟前"
+        android:textColor="@color/text_gray" />
+
+    <ImageView
+        android:layout_width="9dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/job_peonumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/salary"
+        android:layout_marginLeft="1dp"
+        android:text="距离:"
+        android:textSize="11sp"
+        android:textColor="@color/text_gray" />
+
+    <TextView
+        android:id="@+id/peonumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/job_peonumber"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/job_peonumber"
+        android:text="100"
+        android:textSize="11sp"
+        android:textColor="@color/text_gray" />
+
+    <TextView
+        android:id="@+id/job_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/peonumber"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/peonumber"
+        android:text="@string/job_address"
+        android:textSize="11sp"
+        android:textColor="@color/text_gray" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/job_address"
+        android:layout_marginRight="17dp"
+        android:layout_toRightOf="@+id/job_address"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="11sp"
+        android:text="武汉市朝阳路"
+        android:textColor="@color/text_gray" />
+
+
+</RelativeLayout>

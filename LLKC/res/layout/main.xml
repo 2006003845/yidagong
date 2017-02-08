@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/gray"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" >
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp" >
+
+            <RadioGroup
+                android:id="@+id/main_tab_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/main_label_bg_bottom"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/main_tab_home"
+                    style="@style/TabButton"
+                    android:checked="true"
+                    android:drawableTop="@drawable/main_label_icon_home_selector"
+                    android:text="@string/home" />
+
+                <RadioButton
+                    android:id="@+id/main_tab_msg"
+                    style="@style/TabButton"
+                    android:drawableTop="@drawable/main_label_icon_msg_selector"
+                    android:text="@string/msg" />
+
+                <RadioButton
+                    android:id="@+id/main_tab_contacts"
+                    style="@style/TabButton"
+                    android:drawableTop="@drawable/main_label_icon_pcenter_selector"
+                    android:text="@string/contacts" />
+
+                <RadioButton
+                    android:id="@+id/main_tab_fgroup"
+                    style="@style/TabButton"
+                    android:drawableTop="@drawable/main_label_icon_fgroup_selector"
+                    android:text="@string/square" />
+
+                <RadioButton
+                    android:id="@+id/main_tab_pcenter"
+                    style="@style/TabButton"
+                    android:drawableTop="@drawable/main_label_icon_pcenter_selector"
+                    android:text="@string/mine" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/main_tab_new_message"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginRight="58dip"
+                android:layout_marginTop="1dip"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/imgv_remind"
+                android:visibility="visible" />
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

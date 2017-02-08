@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="305dp"
+        layout="@layout/title_c" />
+
+    <LinearLayout
+        android:id="@+id/advicefeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/teltext"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/home_recom_bg"
+            android:hint=" 请输入您的联系方式"
+            android:padding="9dp"
+            android:textSize="15sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/contenttext"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+           android:layout_marginTop="15dp"
+          
+            android:background="@drawable/home_recom_bg"
+            android:gravity="left"
+            android:hint="   请输入您的意见和建议:"
+            android:minLines="1"
+            android:padding="5dp"
+            android:singleLine="false"
+            android:textColor="#787878"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/commitadvice"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/green_rounded"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

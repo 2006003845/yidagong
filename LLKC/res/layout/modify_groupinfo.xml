@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/title_myresume" />
+
+    <ImageView
+        android:id="@+id/modify_groupinfo_head"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:src="@drawable/group_head" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="工友帮名称"
+        android:layout_marginTop="10dp"  
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/modify_groupinfo_et_name"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp" 
+        android:layout_marginTop="5dp"  
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/home_recom_bg"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#666666"
+        android:textSize="16sp" >
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="简介"
+        android:layout_marginTop="10dp"  
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/modify_groupinfo_et_intro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="5dp"  
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/home_recom_bg"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#666666"
+        android:textSize="16sp" >
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

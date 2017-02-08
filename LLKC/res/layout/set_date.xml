@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/set_date_btn_sure_prompt" />
+
+        <Button
+            android:id="@+id/set_date_btn_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="24dp"
+            android:text="@string/set_date_btn_sure" />
+    </RelativeLayout>
+
+    <DatePicker
+        android:id="@+id/set_date_mDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:endYear="2014"
+        android:startYear="1919" />
+
+</LinearLayout>

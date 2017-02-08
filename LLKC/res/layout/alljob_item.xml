@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableRow
+        android:id="@+id/alljob_item_tablerow"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/alljob_item_name1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#d4e6ff"
+            android:text=""
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="100dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/alljob_item_name2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#d4e6ff"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="100dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/alljob_item_name3"
+           	android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#d4e6ff"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </TableRow>
+
+    <View
+        android:id="@+id/alljob_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/alljob_item_tablerow"
+        android:background="#FFFFFF" />
+
+    <TableLayout
+        android:id="@+id/alljob_item_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alljob_item_bg"
+        android:layout_below="@+id/alljob_item_tablerow"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:visibility="gone" >
+    </TableLayout>
+
+</RelativeLayout>

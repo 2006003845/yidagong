@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/other_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp" >
+
+        <com.zzl.zl_app.widget.CircularImage
+            android:id="@+id/group_detail_head"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/group_head" />
+
+        <TextView
+            android:id="@+id/group_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/group_detail_head"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/group_detail_id_hint"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignLeft="@id/group_detail_name"
+            android:layout_below="@id/group_detail_name"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/group_detail_id" />
+
+        <TextView
+            android:id="@+id/group_detail_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/group_detail_id_hint"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/group_detail_id_hint"
+            android:text=""
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/white_rounded"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/group_detail_addres_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/group_detail_addres" />
+
+        <TextView
+            android:id="@+id/group_detail_addres_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/group_detail_addres_img"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/group_detail_addres_img"
+            android:text="所在地点"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/group_detail_addres_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/group_detail_addres_img"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/group_detail_addres_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/group_detail_addres_img"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray" />
+
+        <ImageView
+            android:id="@+id/group_detail_friend_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/group_detail_addres_line"
+            android:layout_margin="10dp"
+            android:src="@drawable/group_detail_friend" />
+
+        <TextView
+            android:id="@+id/group_detail_friends_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/group_detail_friend_img"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/group_detail_friend_img"
+            android:text="创建者"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/group_detail_friend_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/group_detail_friend_img"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/group_detail_friend_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/group_detail_friend_img"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray" />
+
+        <ImageView
+            android:id="@+id/group_detail_time_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/group_detail_friend_line"
+            android:layout_margin="10dp"
+            android:src="@drawable/group_detail_time" />
+
+        <TextView
+            android:id="@+id/group_detail_time_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/group_detail_time_img"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/group_detail_time_img"
+            android:text="创建时间"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/group_detail_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/group_detail_time_img"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/group_detail_time_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/group_detail_time_img"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray" />
+
+        <ImageView
+            android:id="@+id/group_detail_text_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/group_detail_time_line"
+            android:layout_margin="10dp"
+            android:src="@drawable/group_detail_text" />
+
+        <TextView
+            android:id="@+id/group_detail_text_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/group_detail_text_img"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/group_detail_text_img"
+            android:text="简介"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/group_detail_text_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/group_detail_text_img"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="10dp"
+            android:lineSpacingExtra="2dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/group_member_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/white_rounded" >
+
+        <ImageView
+            android:id="@+id/group_detail_pop_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/group_detail_pop" />
+
+        <TextView
+            android:id="@+id/group_detail_pop_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/group_detail_pop_img"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/group_detail_pop_img"
+            android:text="成员"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/group_detail_managelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/text_mid_black_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="管理群成员" />
+
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="15dp"
+                android:src="@drawable/arrow2" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/apply_add_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/blue_rounded" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:layout_toLeftOf="@+id/textView1"
+            android:src="@drawable/seach_button" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="申请加入"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/group_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dismiss_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/red_rounded"
+            android:padding="10dp"
+            android:text="解除好友关系"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/send_news"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/green_rounded"
+            android:padding="10dp"
+            android:text="发送消息"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

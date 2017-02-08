@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/other_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="举报情况："
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/xujia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="10dp"
+            android:text="虚假信息"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/zhaoman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/xujia"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/xujia"
+            android:text="岗位已招满"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/qita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xujia"
+            android:layout_marginLeft="10dp"
+            android:text="其他情况"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/tijiao_text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:gravity="top"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/tijiao_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/green_rounded"
+        android:padding="10dp"
+        android:text="提交举报"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

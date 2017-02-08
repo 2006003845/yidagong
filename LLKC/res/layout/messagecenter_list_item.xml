@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/message_head"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:src="@drawable/head_default" />
+
+        <TextView
+            android:id="@+id/message_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/message_head"
+            android:text="王晓伟"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/message_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message_name"
+            android:layout_toRightOf="@+id/message_head"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:layout_marginLeft="5dp"
+            android:text="这是内容"
+            android:textColor="#828282" />
+
+        <TextView
+            android:id="@+id/message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="#c4c4c4" />
+
+        <LinearLayout
+            android:id="@+id/button_rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/message_context"
+            android:layout_marginRight="15dp" >
+
+            <Button
+                android:id="@+id/agree_button"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:src="@drawable/gray_rounded"
+                android:focusable="false"
+                android:textSize="12sp"
+                android:text="同意" />
+
+            <Button
+                android:id="@+id/refuse_button"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textSize="12sp"
+                android:src="@drawable/gray_rounded"
+                android:focusable="false"
+                android:text="拒绝" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/other_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/group_kuang_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="我创建的工友帮"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/my_group_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="尚未创建任何群" />
+
+            <ListView
+                android:id="@+id/my_grouplist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_rounded"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/divier"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:padding="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/group_kuang_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="我加入的工友帮"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/in_group_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="尚未加入任何群" />
+
+            <ListView
+                android:id="@+id/in_grouplist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_rounded"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/divier"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:padding="5dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

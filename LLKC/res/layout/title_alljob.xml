@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_title"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/home_title_bg" >
+
+    <ImageButton
+        android:id="@+id/title_alljob_back"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_trans_selector"
+        android:padding="12dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/btn_back" />
+
+    <ImageView
+        android:id="@+id/title_alljob_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/home_title_line" />
+
+    <TextView
+        android:id="@+id/title_alljob_card"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/title_alljob_relayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="5dp"
+        android:background="@drawable/bg_trans_selector" >
+
+        <TextView
+            android:id="@+id/title_alljob_tv_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="北京"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/title_alljob_tv_position2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/title_alljob_tv_position"
+            android:layout_centerVertical="true"
+            android:text="[切换]"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/title_alljob_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7dp"
+        android:layout_toLeftOf="@+id/title_alljob_relayout"
+        android:scaleType="centerInside"
+        android:src="@drawable/home_title_line" />
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="120dip"
+        android:layout_height="120dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/progress_bg"
+        android:progressDrawable="@drawable/progress_vertical"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/progress_tv"
+        style="@style/text_mid_white_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="0%" />
+
+    <com.zzl.zl_app.widget.ImageZoomView
+        android:id="@+id/pic_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/pic_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_myresume" />
+
+</RelativeLayout>

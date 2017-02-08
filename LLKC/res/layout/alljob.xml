@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_alljob" />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/alljob_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <ImageView
+                    android:id="@+id/home_image"
+                    android:layout_width="24dp"
+                    android:layout_height="36dp"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/home_hotsearch_img" />
+
+                <TextView
+                    android:id="@+id/home_tv_hot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/home_image"
+                    android:text="@string/alljob"
+                    android:textColor="#515567"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <TableLayout
+                android:id="@+id/alljob_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:shrinkColumns="*"
+                android:stretchColumns="*" >
+            </TableLayout>
+        
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

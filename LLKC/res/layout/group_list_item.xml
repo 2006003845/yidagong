@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <com.zzl.zl_app.widget.CircularImage
+            android:id="@+id/gpic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="2dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/group_head" />
+
+        <TextView
+            android:id="@+id/gname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/gpic"
+            android:text="河北打工帮"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/gnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gname"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/g_peop_pic"
+            android:text="53人"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/gtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gname"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/gnum"
+            android:background="@drawable/green_rounded"
+            android:padding="1dp"
+            android:text="群主"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/g_peop_pic"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignLeft="@+id/gname"
+            android:layout_below="@+id/gname"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/group_num_icon"
+            android:visibility="gone" />
+        
+        <ImageButton
+            android:id="@+id/g_add"           
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:focusable="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/add_friend"
+            android:visibility="gone" />
+        
+        
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    android:orientation="vertical" >
+
+    <include layout="@layout/other_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/indivi"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/seach_friend_key"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:hint="请输入关键字"
+            android:paddingLeft="10dp" />
+
+        <ImageButton
+            android:id="@+id/seach_friend_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/magnifier" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_friend_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/seach_friend_near_button"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_phone" >
+
+            <ImageView
+                android:id="@+id/seach_friend_imgv"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/home_searchnear_img"
+                android:contentDescription="@null"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/seach_friend_near_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/seach_friend_imgv"
+                android:text="附近的人"
+                android:textColor="#515567"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/arrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/seach_friend_recommend_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="推荐好友"
+            android:textColor="#515567" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#dadada" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/seach_friend_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"       
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/divier"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:padding="5dp" >
+    </ListView>
+
+</LinearLayout>

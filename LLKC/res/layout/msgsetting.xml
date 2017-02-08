@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_c" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/text_mid_black_gray_15"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:text="@string/msgsetting_prompt_msg" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_recom_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/msgsetting_relayout_job"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/msgsetting_newmsg_job"
+                        android:textColor="#515567"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/msgsetting_checkbox_job"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:button="@drawable/msgsetting_checkbox"
+                        android:checked="false" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@color/gray" />
+
+                <RelativeLayout
+                    android:id="@+id/msgsetting_relayout_friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/msgsetting_newmsg_friends"
+                        android:textColor="#515567"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/msgsetting_checkbox_friends"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:button="@drawable/msgsetting_checkbox"
+                        android:checked="false" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@color/gray" />
+
+                <RelativeLayout
+                    android:id="@+id/msgsetting_relayout_fgroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/msgsetting_newmsg_fgroup"
+                        android:textColor="#515567"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/msgsetting_checkbox_fgroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:button="@drawable/msgsetting_checkbox"
+                        android:checked="false" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@color/gray" />
+
+                <RelativeLayout
+                    android:id="@+id/msgsetting_relayout_sys"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/msgsetting_newmsg_sys"
+                        android:textColor="#515567"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/msgsetting_checkbox_sys"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:button="@drawable/msgsetting_checkbox"
+                        android:checked="false" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/text_mid_black_gray_15"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:text="@string/msgsetting_prompt_stype" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_recom_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/msgsetting_relayout_sound"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/msgsetting_sound"
+                        android:textColor="#515567"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/msgsetting_checkbox_sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:button="@drawable/msgsetting_checkbox"
+                        android:checked="false" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@color/gray" />
+
+                <RelativeLayout
+                    android:id="@+id/msgsetting_relayout_shake"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/msgsetting_shake"
+                        android:textColor="#515567"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/msgsetting_checkbox_shake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:button="@drawable/msgsetting_checkbox"
+                        android:checked="false" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
